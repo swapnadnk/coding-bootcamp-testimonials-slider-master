@@ -29,22 +29,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
     // innerContent.appendChild(p2);
     // let pImg = document.getElementsByClassName("pImg")[0];
     // pImg.src = content[0][3];
-    document.getElementsByClassName("pcontent")[0].innerHTML = content[0][0];
-    document.getElementsByClassName("pname")[0].innerHTML = content[0][1]+", ";
+    document.getElementsByClassName("pcontent")[0].innerHTML = "\"" + content[0][0] + "\"";
+    document.getElementsByClassName("pname")[0].innerHTML = content[0][1];
     document.getElementsByClassName("ptitle")[0].innerHTML = content[0][2];
     document.getElementsByClassName("pImg")[0].src = content[0][3];
 });
 
 function previous(){
-    document.getElementsByClassName("pcontent")[0].innerHTML = content[0][0];
-    document.getElementsByClassName("pname")[0].innerHTML = content[0][1]+", ";
+    document.getElementsByClassName("pcontent")[0].innerHTML = "\"" + content[0][0] + "\"";
+    document.getElementsByClassName("pname")[0].innerHTML = content[0][1];
     document.getElementsByClassName("ptitle")[0].innerHTML = content[0][2];
     document.getElementsByClassName("pImg")[0].src = content[0][3];
 }
 
 function next(){
-    document.getElementsByClassName("pcontent")[0].innerHTML = content[1][0];
-    document.getElementsByClassName("pname")[0].innerHTML = content[1][1]+", ";
+    document.getElementsByClassName("pcontent")[0].innerHTML = "\"" + content[1][0] + "\"";
+    document.getElementsByClassName("pname")[0].innerHTML = content[1][1];
     document.getElementsByClassName("ptitle")[0].innerHTML = content[1][2];
     document.getElementsByClassName("pImg")[0].src = content[1][3];
 }
